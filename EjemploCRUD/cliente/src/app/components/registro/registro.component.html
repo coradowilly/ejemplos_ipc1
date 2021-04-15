@@ -1,0 +1,12 @@
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  [(ngModel)]="this.libro.nombre" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Paginas</label>
+      <input type="number" class="form-control" id="exampleInputPassword1" [(ngModel)]="this.libro.paginas" [ngModelOptions]="{standalone: true}">
+    </div>
+    
+    <button type="submit" class="btn btn-primary" (click)="registro()">Enviar</button>
+</form>
