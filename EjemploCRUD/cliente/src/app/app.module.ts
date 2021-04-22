@@ -8,13 +8,16 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { NarvarComponent } from './components/narvar/narvar.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UploadComponent } from './components/upload/upload.component';
+import { FileInputModule } from 'ng-uikit-pro-standard';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistroComponent,
     InicioComponent,
-    NarvarComponent
+    NarvarComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,

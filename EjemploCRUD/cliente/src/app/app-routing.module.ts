@@ -1,6 +1,8 @@
-import { NgModule } from '@angular/core';
+import { Route } from '@angular/compiler/src/core';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { RegistroComponent } from './components/registro/registro.component';
+import { UploadComponent } from './components/upload/upload.component';
 
 const routes: Routes = [
   {
@@ -11,6 +13,10 @@ const routes: Routes = [
   {
     path:'registro',
     component: RegistroComponent
+  },
+  {
+    path:'upload',
+    component: UploadComponent
   }
 ];
 
@@ -18,4 +24,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
+export const routing: ModuleWithProviders<any> = RouterModule.forRoot(routes);
