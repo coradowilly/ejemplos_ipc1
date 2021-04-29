@@ -19,7 +19,7 @@ def home():
 
 @app.route('/getlibros',methods = ['GET'])
 def getLibros():
-    return 'Nombre: '+lista[0].nombre + '\nPaginas: ' + str(lista[0].paginas)
+    return {'message':'Nombre: '+lista[0].nombre + '\nPaginas: ' + str(lista[0].paginas)}
 
 @app.route('/registro', methods = ['POST'])
 def postLibro():

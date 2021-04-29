@@ -11,11 +11,11 @@ export class BackendService {
   URL: string = 'http://localhost:5000';
 
   getLibros(){
-    return this.http.get(`${URL}/getlibros`) 
+    return this.http.get(`${this.URL}/getlibros`) 
   }
 
   registrarLibro(libro:any){
-    return this.http.post(`http://localhost:5000/registro`,libro)
+    return this.http.post(`${this.URL}/registro`,libro)
   }
 
   /* 
